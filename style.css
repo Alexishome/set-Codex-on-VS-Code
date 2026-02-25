@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 20% 20%, #1f2a44, #090b12 55%),
+    linear-gradient(180deg, #111827, #05070d);
+  color: #e6f0ff;
+  font-family: "Press Start 2P", "Courier New", monospace;
+}
+
+.game-shell {
+  width: min(92vw, 460px);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.tips {
+  margin: 8px 0;
+  font-size: 10px;
+  color: #a6b7d3;
+  line-height: 1.6;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border: 3px solid #26385f;
+  border-radius: 10px;
+  background: #070b17;
+  box-shadow: 0 12px 40px rgba(5, 8, 18, 0.6);
+  image-rendering: pixelated;
+}
